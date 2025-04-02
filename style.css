@@ -1,0 +1,267 @@
+/* Stili base per dare un look Clash Royale */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2b2d42;  /* Sfondo scuro */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;          /* Use flexbox to structure the layout */
+    flex-direction: column; /* Stack content vertically */
+    height: 100vh;          /* Full viewport height */
+}
+@font-face {
+    font-family: 'ClashRoyale';
+    src: url('assets/cr.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+header {
+    position: relative;
+    background: linear-gradient(90deg, #004aad 20%, #0077ff 50%, #004aad 80%); 
+    padding: 25px 0;
+    text-align: center;
+    border-bottom: 5px solid gold;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Smooth hover effect */
+header:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    transform: scale(1.02); /* Slightly enlarge the header for a subtle 3D effect */
+}
+
+h1 {
+    position: absolute;
+    top: 0;  /* Aligns the text to the top */
+    left: 50%;  /* Centers the text horizontally */
+    transform: translateX(-50%);  /* Adjusts the text for perfect centering */
+    color: rgb(223, 199, 64);
+    font-family: 'ClashRoyale', sans-serrif;
+    font-size: 2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), 0 0 25px gold;
+}
+
+footer {
+    height: 30vh;
+    text-align: center;
+    padding: 10px;
+    background-color: #1d3557;
+    border-top: 4px solid gold;
+    margin-top: auto;  /* Pushes the footer to the bottom */
+}
+
+.logo {
+    width: 220px;
+    left: 270px;       /* Slightly smaller logo */
+    display: block;     /* Center the logo */
+    margin: 5px ;   /* Minimal margin for centering */
+    padding: 5;         /* No padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    
+}
+
+.container {
+    position: absolute;  /* Fixed positioning so it stays at the bottom */
+    top: 87px;  /* Adjust distance from the bottom */
+    left: 0;
+    right: 0;   /* Adjust distance from the right */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+   
+    text-align: center;  /* Aligns the images to the right inside the container */
+}
+.container:hover .image {
+    transform: scale(1.1);  /* Slightly enlarge the images on hover */
+}
+
+.image {
+    display: inline-block;  /* Align images side by side */
+    width: 90px;  /* Set the width of the images */
+    height: auto;  /* Keeps the aspect ratio */
+    margin: 0 180px;  /* Space between the images */
+    transition: all 0.7s ease; /* Smooth transition effect */
+    position: sticky;  /* Fixed positioning so it stays at the bottom */
+
+}
+
+
+
+/* Apply the font to buttons */
+.card-button {
+    font-family: 'ClashRoyale', sans-serif;
+    font-size: 1.3rem;
+    background: linear-gradient(180deg, #1a1f71, #162447);
+    color: gold;
+    border: 3px solid gold;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-button:hover {
+    background: linear-gradient(180deg, #2c3e50, #1a1f71);
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2b2d42;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('assets/pattern.png'); /* Use your pattern image */
+    background-repeat: repeat; /* Repeat the image */
+    background-size: 200px 200px;  /* Adjust size of the pattern (e.g., 100px by 100px) */
+}
+
+/* Supercell image style */
+.supercell {
+    position: absolute;   /* Positioning it absolutely inside the header */
+    top: 10px;            /* Slight distance from the top */
+    right: 0px;          /* Slight distance from the right */
+    width: 250px;         /* Adjust the size of the logo */
+    height: auto;         /* Maintain aspect ratio */
+    z-index: 10;          /* Ensure it stays above other content */
+}
+.knight-logo {
+    position: absolute;
+    top: 60px;           /* Aligns the knight image with the Supercell logo */
+    right: 270px;        /* Moves the knight image left from the right edge */
+    width: 140px;         /* Adjust the size of the knight image */
+    height: auto;        /* Maintain the aspect ratio */
+    z-index: 9;          /* Ensures it stays under the Supercell logo */
+}
+
+.ma {
+    position: absolute;
+    top: 53px;           /* Aligns the knight image with the Supercell logo */
+    left: 270px;        /* Moves the knight image left from the right edge */
+    width: 140px;         /* Adjust the size of the knight image */
+    height: auto;        /* Maintain aspect ratio */
+    z-index: 9;          /* Ensures it stays under the Supercell logo */
+}
+
+.shield {
+    position: absolute;           /* Position relative to the header */
+    bottom: 9px;                  /* Keep the image at the bottom of the header */
+    left: 50%;                    /* Center the image horizontally */
+    transform: translateX(-50%);  /* Adjust for perfect centering */
+    width: 130px;                  /* Adjust the size of the image */
+    height: auto;                 /* Maintain aspect ratio */
+    z-index: 5;                   /* Ensure it stays above other elements in the header */
+    transition: all 0.3s ease;    /* Add smooth transition for animations */
+}
+
+/* Уменьшение высоты градиента */
+.header-gradient {
+    background: linear-gradient(90deg, #1e90ff, #00bfff);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-content img.supercell {
+    height: 40px;
+}
+
+.header-content img.logo {
+    height: 50px;
+}
+
+.header-content h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+/* Кнопка "Назад" */
+.back-button {
+    position: relative; /* Относительное позиционирование */
+    margin: 20px 0 20px 20px; /* Отступы: сверху, справа, снизу, слева */
+    padding: 10px 20px; /* Внутренние отступы */
+    background-color: #4CAF50; /* Зеленый фон */
+    color: white; /* Белый текст */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer; /* Указатель при наведении */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Более темный зеленый при наведении */
+}
+
+/* Карточки */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Button container to align buttons and dividers in a row */
+.button-container {
+    display: flex;
+    justify-content: space-evenly;  /* Center the buttons horizontally */
+    align-items: center;      /* Center the buttons vertically */
+    height: 70vh;            /* Full height of the screen */
+    margin-top: 50px;         /* Optional: Add some space from the top */
+    gap: 20px;     
+     /* Adjust space between the buttons */
+}
+
+/* Vertical divider that stretches from top to bottom */
+.vertical-divider {
+    width: 3.5px; /* Width of the divider */
+    background-color: gold; /* Golden color */
+    border-radius: 10px; /* Slight rounding of the edges */
+    height: 88vh; /* Full height of the container */
+    
+}
